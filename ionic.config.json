@@ -1,0 +1,7 @@
+{
+  "name": "Ciniflix",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
