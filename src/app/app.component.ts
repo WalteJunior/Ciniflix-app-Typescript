@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   constructor() {}
+
+  public appMenu =[
+    {title: 'Teste1', URL: '/teste1', icon: 'list'},
+    {title: 'Teste2', URL: '/teste2', icon: 'add'},
+    {title: 'Teste3', URL: '/teste3', icon: 'trash'}
+  ];
 }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ModalonePage } from '../modalone/modalone.page';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +9,16 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  constructor(
+    private modalctrl:ModalController
+  ) { }
 
+  async showModal(){
+    console.log('showModal()');
+    const modal = await this.modalctrl.create({
+      component: ModalonePage
+    });
+
+    await modal.present();
+  }
 }

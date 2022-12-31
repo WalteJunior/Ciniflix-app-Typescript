@@ -1,0 +1,28 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Ciniflix Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list class="box">
+      <ion-button (click)="goHome()" type="submit">Home</ion-button>
+      <ion-button routerLink="/about" type="submit">Sobre mim</ion-button>
+      <ion-button routerLink="/location"  type="submit">Localização</ion-button>
+      <ion-button (click)="showModal()" type="submit">Sair</ion-button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title style="text-align: center;">Localização</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.5315647258876!2d-43.45890504991607!3d-22.8568140849638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99603a50147169%3A0x2c296dee012e309a!2sR.%20Mario%20das%20V%C3%ADrgens%20de%20Lima%2C%2090%20-%20Bangu%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021864-410!5e0!3m2!1spt-BR!2sbr!4v1670282939548!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </ion-content>
+</div>

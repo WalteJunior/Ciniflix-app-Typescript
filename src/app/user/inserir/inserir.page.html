@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Inserir</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input name="login" type="text" [(ngModel)]="email"></ion-input>    
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input name="senha" type="password" [(ngModel)]="senha"></ion-input>    
+    </ion-item>
+    <ion-row class="bt">
+      <ion-button color="secondary" type="submit" (click)="insereUsuario()">
+        Salvar<ion-icon slot="end" name="save-outline"></ion-icon>
+      </ion-button>
+      <ion-button type="submit" routerLink="/">Fazer login</ion-button>
+    </ion-row>
+  </form>
+</ion-content>

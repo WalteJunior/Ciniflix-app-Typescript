@@ -1,0 +1,36 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Ciniflix Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list class="box">
+      <ion-button (click)="goHome()" type="submit">Home</ion-button>
+      <ion-button routerLink="/about" type="submit">Sobre mim</ion-button>
+      <ion-button routerLink="/location"  type="submit">Localização</ion-button>
+      <ion-button (click)="showModal()" type="submit">Sair</ion-button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Sobre mim</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <div class="profile">
+      <img class="photo" src="../assets/icon/profile.jpg">
+      <h2>Walter dos Santos Junior</h2>
+      <p>Idade: 21 anos</p>
+      <p>Niver: 28/12</p>
+      <p>Curso: Ciência da Computação</p>
+      <p>Matéria: Programação Movel</p>
+      <p>Profº: Marcelo Loutfi</p>
+    </div>
+  </ion-content>
+</div>

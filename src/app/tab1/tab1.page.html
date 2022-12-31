@@ -1,17 +1,38 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title>Ciniflix Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+  <ion-content class="ion-padding">
+    <ion-list class="box">
+      <ion-button (click)="goHome()" type="submit">Home</ion-button>
+      <ion-button routerLink="/about" type="submit">Sobre mim</ion-button>
+      <ion-button routerLink="/location"  type="submit">Localização</ion-button>
+      <ion-button (click)="showModal()" type="submit">Sair</ion-button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <h1>Desenvolvedor</h1>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <div class="profile">
+      <img class="photo" src="../assets/icon/profile.jpg">
+      <h2>Walter Junior</h2>
+      <p>Matricula: 19101318</p>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/walter.junior.37625"><img src="../assets/icon/facebook.png" alt=""></a>
+      <a href="https://www.instagram.com/walt_juni0r/"><img src="../assets/icon/instagram.png" alt=""></a>
+      <a href="https://api.whatsapp.com/send?phone=5521980027289"><img src="../assets/icon/whatsapp.png" alt=""></a>
+      <a href="https://github.com/WalteJunior"><img src="../assets/icon/github.png" alt=""></a>
+    </div>
+  </ion-content>
+</div>
